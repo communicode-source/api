@@ -1,0 +1,75 @@
+<nav>
+    <div class="container">
+
+        <ul class="left">
+        <li class="no-hover">
+      <a href="#" class="pull-left logo">
+        <img src="Images/Logo/CLight.svg" />
+      </a>
+        </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-left left">
+          <li class="no-hover">
+      <a href="#">Explore</a>
+        </li>
+      </ul>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right right">
+                <li>
+                    <a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();" href="#">Matches</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu notification-dropdown">
+                      <div class="row">
+                        <li class="notification">
+                          <div class="col-md-2">
+                            <i class="fa fa-circle notification-unread" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-10 notification-text">
+                            <a href="/u/notifications#3145">Trevor Crupi followed you.</a>
+                          </div>
+                        </li>
+                      </div>
+                      <li role="separator" class="divider"></li>
+                      <div class="row">
+                        <li class="notification">
+                          <div class="col-md-2">
+                            <i class="fa fa-circle notification-unread" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-10 notification-text">
+                            <a href="/u/notifications#3145">Cooper Campbell followed you.</a>
+                          </div>
+                        </li>
+                      </div>
+                      <li role="separator" class="divider"></li>
+                      <div class="row">
+                        <li class="notification">
+                          <div class="col-md-2">
+                            <i class="fa fa-circle-o notification-read" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-10 notification-text">
+                            <a href="/u/notifications#3145">Sami Fassnaucht followed you.</a>
+                          </div>
+                        </li>
+                      </div>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ user.fName }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">My Profile</a></li>
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="#">Settings</a></li>
+                    <li role="separator" class="divider"></li>
+                      <li><a href="#">Explore</a></li>
+                    <li role="separator" class="divider"></li>
+                      <li><a href="/oauth/logout">Log Out</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
