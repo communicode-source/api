@@ -41,25 +41,6 @@ require('./app/config/passportConfig')(passport);
 app.all('/api/secure/*', [require('./app/middleware/validateRequest')]);
 app.use('/web/*', [require('./app/middleware/userLogin').ensureNotLogged]);
 
-app.use('/', express.static(path.join(__dirname, 'views/public'), {
-  extensions: ['html']
-}));
-app.use('/Images', express.static(path.join(__dirname, 'public/Images'), {
-  extensions: ['css']
-}));
-
-
-app.use('/Images', express.static(path.join(__dirname, 'public/Images')));
-
-app.use('/css', express.static(path.join(__dirname, 'public/css'), {
-  extensions: ['css']
-}));
-app.use('/js', express.static(path.join(__dirname, 'public/js'), {
-  extensions: ['js']
-}));
-
-app.use('/fonts', express.static(path.join(__dirname, 'public/fonts')));
-
 app.all('/*', function(req, res, next){
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE,OPTIONS');
